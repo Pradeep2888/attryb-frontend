@@ -1,9 +1,10 @@
 import React from 'react'
 import LoginBox from '../components/LoginBox'
+import "../style/login.css"
 
 function Login() {
   return (
-    <div>
+    <div className='login' >
       <LoginBox/>
     </div>
   )

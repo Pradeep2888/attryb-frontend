@@ -1,18 +1,20 @@
 import React from 'react'
 
-function LoginBox() {
+function RegisterBox() {
   return (
     <div className='logincontainer'>
         <div className='loginbox'>
-            <h1>Login</h1>
+            <h1>Register</h1>
 
             <form>
+                <input type='name' placeholder='Name' />
+                <br/>
                 <input type='email' placeholder='Email' />
                 <br/>
                 <input type='password' placeholder='Password' />
                 <br/>
                 <div>
-                <input type='submit' value={"Login"} className='loginbutton' />
+                <input type='submit' value={"Register"} className='loginbutton' />
                 </div>
             </form>
 
@@ -21,4 +23,4 @@ function LoginBox() {
   )
 }
 
-export default LoginBox
+export default RegisterBox

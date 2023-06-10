@@ -1,8 +1,12 @@
 import React from 'react'
+import AddCarBox from '../components/AddCarBox'
+import "../style/addcar.css"
 
 function AddCar() {
   return (
-    <div>AddCar</div>
+    <div className='car' >
+      <AddCarBox/>
+    </div>
   )
 }
 

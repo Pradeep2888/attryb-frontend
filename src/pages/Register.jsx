@@ -1,8 +1,11 @@
 import React from 'react'
+import RegisterBox from '../components/RegisterBox'
 
 function Register() {
   return (
-    <div>Register</div>
+    <div className='login'>
+      <RegisterBox/>
+    </div>
   )
 }
 

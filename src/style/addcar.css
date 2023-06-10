@@ -1,14 +1,14 @@
-.login{
+.car{
     background: linear-gradient(to right,#f9f9f9,orange);
     height: 80vh;
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
-.logincontainer{
+.carcontainer{
     height: 100%;
     width: 100%;
 }
-.loginbox{
+.carbox{
     width: 25%;
     margin:auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -18,17 +18,17 @@
     padding-top: 3rem;
     border-radius: 10px;
 }
-.loginbox>form{
+.carbox>form{
  
     margin: 2rem;
 }
-.loginbox>form>input{
+.carbox>form>input{
     margin-bottom: 2rem;
     height: 1.3rem;
     font-size: 18px;
     width: 96%;
 }
-.loginbutton{
+.carbutton{
     width: 100%;
     font-size: 18px;
     background: transparent;
@@ -37,6 +37,6 @@
     border: 1px solid black;
     cursor: pointer;
 }
-.loginbutton:hover{
+.carbutton:hover{
     background: linear-gradient(to right,#f9f9f9,green);
 }
