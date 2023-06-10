@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import './style/App.css'
 import AllRoutes from './routes/AllRoutes'
 import Navbar from './components/Navbar'
 
