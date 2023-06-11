@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import "../style/Home.css"
-import Sidebar from '../components/sidebar'
 import CarCard from '../components/CarCard'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
