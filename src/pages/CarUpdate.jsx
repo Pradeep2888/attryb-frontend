@@ -9,7 +9,7 @@ const [data,setData]=useState()
  const {id}=useParams()
 
  const getData=()=>{
-  axios.get(`http://localhost:8080/market/single-data/${id}`)
+  axios.get(`https://attryb-backend.onrender.com/market/single-data/${id}`)
   .then((r)=>{
      setData(r.data.car[0])
      setState({...state,distance_covered:r.data.car[0].distance_covered,discription:r.data.car[0].discription,image_url:r.data.car[0].image_url ,no_of_accidents:r.data.car[0].no_of_accidents ,no_previous_buyer:r.data.car[0].no_previous_buyer,paint:r.data.car[0].paint,registration_place:r.data.car[0].registration_place,scratches:r.data.car[0].scratches})
@@ -38,7 +38,7 @@ useEffect(()=>{
   }
    
   const updateData=(formData)=>{
-    axios.patch(`http://localhost:8080/market/update/${id}`,formData)
+    axios.patch(`https://attryb-backend.onrender.com/market/update/${id}`,formData)
     .then((r)=>{
        if(r.data==="update successfully"){
            alert("Updated Successfully")

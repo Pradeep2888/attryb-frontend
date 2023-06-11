@@ -24,7 +24,7 @@ function LoginBox() {
     
   const  getData=(state)=>{
     const tokyo=JSON.parse(localStorage.getItem("token")) || ""
-    axios.post(`http://localhost:8080/login/user`,state)
+    axios.post(`https://attryb-backend.onrender.com/login/user`,state)
     .then((r)=>{
       window.localStorage.setItem("token", JSON.stringify(r.data.token))
       navigate("/")

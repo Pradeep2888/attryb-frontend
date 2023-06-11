@@ -14,7 +14,7 @@ const navigate=useNavigate()
 
 
 const getData=()=>{
-  axios.get(`http://localhost:8080/market?colour=${colour}&price=${price}&milage=${milage}`)
+  axios.get(`https://attryb-backend.onrender.com/market?colour=${colour}&price=${price}&milage=${milage}`)
   .then((r)=>{
     setData(r.data.market_car)
   })
@@ -24,7 +24,7 @@ const getData=()=>{
 }
 
 const handleDelete=(id)=>{
-  axios.delete(`http://localhost:8080/market/delete/${id}`)
+  axios.delete(`https://attryb-backend.onrender.com/market/delete/${id}`)
   .then((r)=>{
     alert(r.data.msg)
     getData()

@@ -24,7 +24,7 @@ function RegisterBox() {
   }
     
   const  getData=(state)=>{
-    axios.post(`http://localhost:8080/register/add-user`,state)
+    axios.post(`https://attryb-backend.onrender.com/register/add-user`,state)
     .then((r)=>{
       if(r.data.msg==="User already exists"){
         alert(r.data.msg)

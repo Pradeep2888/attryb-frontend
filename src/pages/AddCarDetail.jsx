@@ -20,7 +20,7 @@ function AddCarDetail() {
   }
     const {id}=useParams()
   const  getData=(state)=>{
-  axios.post(`http://localhost:8080/market/add/${id}`,state)
+  axios.post(`https://attryb-backend.onrender.com/market/add/${id}`,state)
   .then((r)=>{
     alert(r.data.msg)
   })

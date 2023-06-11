@@ -10,7 +10,7 @@ const [search,setSearch]=useState("")
 
 
 const getData=(search)=>{
- axios.get(`http://localhost:8080/oem?search=${search}`)
+ axios.get(`https://attryb-backend.onrender.com/oem?search=${search}`)
  .then((r)=>{
   setData(r.data.oem)
  })
