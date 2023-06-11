@@ -1,7 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function CarCard({handleDelete,id,price,name,milage,max_speed,registration_place,no_previous_buyer,paint,no_of_accidents,scratches,image_url,distance_covered,year}) {
- 
+  
+  const navigate=useNavigate()
 
   return (
     <div className='card'>
@@ -20,7 +22,7 @@ function CarCard({handleDelete,id,price,name,milage,max_speed,registration_place
         <div> <span>Number of previous buyers: {no_previous_buyer}</span></div> 
         <div> <span>Registration Place: {registration_place} </span></div> 
         <div id='btn-area' >
-          <button>Edit</button>
+          <button onClick={()=>navigate(`/update/${id}`)} >Edit</button>
           <button onClick={()=>handleDelete(id)} >Delete</button>
         </div>
      </div>

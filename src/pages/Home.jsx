@@ -3,12 +3,14 @@ import "../style/Home.css"
 import Sidebar from '../components/sidebar'
 import CarCard from '../components/CarCard'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
 const [data,setData]=useState()
 const [colour,setColour]=useState("")
 const [price,setPrice]=useState("")
 const [milage,setMilage]=useState("")
+const navigate=useNavigate()
 
 
 const getData=()=>{
