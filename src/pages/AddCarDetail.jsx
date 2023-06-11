@@ -10,7 +10,7 @@ function AddCarDetail() {
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
-    setState({ ...state, [name]: value });
+    setState({ ...state, [name]: value.toLowerCase() });
 
   };
 

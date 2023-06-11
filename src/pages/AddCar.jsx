@@ -5,9 +5,12 @@ import axios from 'axios'
 
 function AddCar() {
 const [data,setData]=useState()
+const [search,setSearch]=useState("")
 
-const getData=()=>{
- axios.get("http://localhost:8080/oem")
+
+
+const getData=(search)=>{
+ axios.get(`http://localhost:8080/oem?search=${search}`)
  .then((r)=>{
   setData(r.data.oem)
  })
@@ -15,14 +18,31 @@ const getData=()=>{
   console.log(err)
  })
 }
+// useEffect(()=>{
+//   getData()
+
+// },[])
 
 useEffect(()=>{
-  getData()
-})
+  if(search!==""){
+    let timer=setTimeout(()=>{
+      getData(search)
+    },500)
+    return () =>clearTimeout(timer)
+  }
+  
+  else{
+    getData("")
+  }
+  
+},[search])
 
   return (
     <div className='car' >
      <div><h1>Original Equipment Manufacturers</h1></div>
+     <div className='search' >
+      <div><input type='text' onChange={(e)=>setSearch(e.target.value)} /></div>
+     </div>
      <table className='oemcardarea' >
      <thead>
       <tr>
