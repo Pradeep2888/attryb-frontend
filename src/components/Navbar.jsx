@@ -1,6 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Navbar() {
+  const navigate=useNavigate()
+  const token=JSON.parse(localStorage.getItem("token")) || ""
+  
+  useEffect(()=>{
+    // console.log(token)
+  },[])
+
+  const handleLogout=()=>{
+    window.localStorage.setItem("token", JSON.stringify(""))
+    navigate("/login")
+  }
+  
   return (
     <div className='navbar-container'>
       <div className='navbox1' >
@@ -9,8 +22,12 @@ function Navbar() {
       <div className='navbox2' >
         <div><a href='/'>Home</a></div>
         <div><a href='/add-car'>Add Car</a></div>
-        <div><a href='/register'>Register</a></div>
-        <div><a href='login'>Login</a></div>
+        {
+          token===""?<div><a href='/register' >Register</a></div>:""
+        }
+        {
+          token===""? <div><a href='login'>Login</a></div>:<div onClick={handleLogout} ><a >Logout</a></div>
+        }
       </div>
     </div>
   )

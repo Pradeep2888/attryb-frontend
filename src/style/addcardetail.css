@@ -1,0 +1,35 @@
+.acd-container{
+  height: 80vh;
+  background: linear-gradient(to right,#f9f9f9,orange);
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  
+}
+.acd-area{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin: auto;
+  width: 80%;  
+ text-align: center;
+ padding: 1rem;
+}
+.acd-row{
+    display: flex;
+   margin-bottom: 0.8rem;
+    justify-content: space-around;
+}
+
+.submit-detail{
+border: none;
+ padding: 0.5rem 3rem 0.5rem 3rem;
+ font-size: 24px;
+ border-radius: 10px;
+ cursor: pointer;
+ box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+ background: linear-gradient(to right,#f9f9f9,orange);
+}
+
+.biscription{
+    height: 3rem;
+}

@@ -1,42 +1,30 @@
 .car{
     background: linear-gradient(to right,#f9f9f9,orange);
     height: 80vh;
-    padding-top: 5rem;
+    padding-top: 1rem;
     padding-bottom: 5rem;
 }
-.carcontainer{
-    height: 100%;
-    width: 100%;
-}
-.carbox{
-    width: 25%;
-    margin:auto;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    background: linear-gradient(to right,#f9f9f9,orange);
+.car>div{
     text-align: center;
-    padding-bottom: 4rem;
-    padding-top: 3rem;
-    border-radius: 10px;
+    margin-bottom: 1.5rem;
 }
-.carbox>form{
- 
-    margin: 2rem;
+.oemcardarea{
+border: 4px solid black;
+width: 100%;
+background: linear-gradient(to left,#f9f9f9,orange);
 }
-.carbox>form>input{
-    margin-bottom: 2rem;
-    height: 1.3rem;
-    font-size: 18px;
-    width: 96%;
-}
-.carbutton{
-    width: 100%;
-    font-size: 18px;
-    background: transparent;
-    font-weight: 600;
-    border-radius: 5px;
+.oemcardarea>thead>tr>th{
     border: 1px solid black;
-    cursor: pointer;
+    background-color: aquamarine;
 }
-.carbutton:hover{
-    background: linear-gradient(to right,#f9f9f9,green);
+.oemcardarea>tbody>tr>td{
+    border: 1px solid black;
+}
+.colour{
+    display: flex;
+}
+.select{
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
 }

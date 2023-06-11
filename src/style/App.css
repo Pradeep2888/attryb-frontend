@@ -5,6 +5,7 @@
   display: flex;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 15px;
   background: linear-gradient(to right,#f9f9f9,orange);
+  border-bottom: 1px solid black;
 }
 .navbox1{
   width: 30%;
