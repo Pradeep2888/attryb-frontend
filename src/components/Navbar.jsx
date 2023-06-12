@@ -23,10 +23,10 @@ function Navbar() {
         <div><a href='/'>Home</a></div>
         <div><a href='/add-car'>Add Car</a></div>
         {
-          token===""?<div><a href='/register' >Register</a></div>:""
+          token===""?<div onClick={()=>navigate("/register")} ><a >Register</a></div>:""
         }
         {
-          token===""? <div><a href='login'>Login</a></div>:<div onClick={handleLogout} ><a >Logout</a></div>
+          token===""? <div onClick={()=>navigate("/login")} ><a >Login</a></div>:<div onClick={handleLogout} ><a >Logout</a></div>
         }
       </div>
     </div>
